@@ -53,7 +53,7 @@ Next.js 16 · React 19 · Tailwind CSS v4 · Motion · shadcn/ui · next-themes 
 
 1. **Deploy en Vercel** — ✅ En vivo en `portfoliojesusobando-main.vercel.app`
 2. **Consolidar a página única** — ✅ Solo `/creative`, `/professional` redirige
-3. **Agregar país en experiencia** — ✅ Campo `country` en `data.ts`
+3. **Agregar país en experiencia** — ✅ Campo `country` en `data.ts` y mostrado en UI de `/creative`
 4. **Corregir ubicación PDVSA** — ✅ Lagunillas/Bachaquero
 5. **Mantener esencia y colores** — Azul `#00b4d8`, Outfit + Inter, light default
 6. **Siguiente**: Mejoras UI/UX en la página creativa manteniendo colores y esencia
