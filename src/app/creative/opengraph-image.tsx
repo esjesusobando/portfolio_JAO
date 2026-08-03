@@ -13,76 +13,105 @@ export default function OpenGraphImage() {
           width: "100%",
           display: "flex",
           flexDirection: "column",
-          alignItems: "flex-start",
+          alignItems: "center",
           justifyContent: "center",
           backgroundColor: "#0a0a0a",
-          padding: "80px",
-          fontFamily: "system-ui, sans-serif",
+          position: "relative",
         }}
       >
-        <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "32px" }}>
+        {/* Background gradient overlay */}
+        <div
+          style={{
+            position: "absolute",
+            top: 0,
+            left: 0,
+            right: 0,
+            bottom: 0,
+            background: "linear-gradient(135deg, rgba(0,180,216,0.15) 0%, rgba(10,10,10,0.9) 100%)",
+          }}
+        />
+
+        {/* Accent line top */}
+        <div
+          style={{
+            position: "absolute",
+            top: 0,
+            left: 0,
+            right: 0,
+            height: "4px",
+            backgroundColor: "#00b4d8",
+          }}
+        />
+
+        {/* Main content */}
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+            gap: "16px",
+            zIndex: 1,
+          }}
+        >
+          {/* Name */}
+          <span
+            style={{
+              color: "#ffffff",
+              fontSize: "56px",
+              fontWeight: "700",
+              letterSpacing: "-0.02em",
+              textAlign: "center",
+            }}
+          >
+            {personalInfo.name}
+          </span>
+
+          {/* Title */}
+          <span
+            style={{
+              color: "#00b4d8",
+              fontSize: "22px",
+              textAlign: "center",
+              letterSpacing: "0.05em",
+            }}
+          >
+            {personalInfo.title}
+          </span>
+
+          {/* Divider */}
           <div
             style={{
-              width: "12px",
-              height: "12px",
-              borderRadius: "50%",
+              width: "80px",
+              height: "2px",
               backgroundColor: "#cbff6a",
-              boxShadow: "0 0 20px #cbff6a",
+              marginTop: "8px",
+              marginBottom: "8px",
             }}
           />
+
+          {/* Location */}
           <span
             style={{
               color: "#64748b",
-              fontSize: "16px",
-              textTransform: "uppercase",
-              letterSpacing: "0.1em",
+              fontSize: "14px",
+              textAlign: "center",
             }}
           >
-            Portfolio Creativo
+            {personalInfo.location}
           </span>
         </div>
 
-        <span
+        {/* Bottom bar */}
+        <div
           style={{
-            color: "#ffffff",
-            fontSize: "72px",
-            fontWeight: "700",
-            letterSpacing: "-0.02em",
-            lineHeight: "1.1",
-            marginBottom: "16px",
+            position: "absolute",
+            bottom: 0,
+            left: 0,
+            right: 0,
+            height: "4px",
+            backgroundColor: "#cbff6a",
           }}
-        >
-          {personalInfo.name}
-        </span>
-
-        <span
-          style={{
-            color: "#a1a1a1",
-            fontSize: "28px",
-            marginBottom: "40px",
-          }}
-        >
-          {personalInfo.title}
-        </span>
-
-        <div style={{ display: "flex", flexWrap: "wrap", gap: "12px" }}>
-          {["LLM Integration", "Prompt Engineering", "MVP Prototyping", "Oil & Gas"].map((skill) => (
-            <div
-              key={skill}
-              style={{
-                backgroundColor: "rgba(203, 255, 106, 0.1)",
-                borderColor: "rgba(203, 255, 106, 0.3)",
-                borderWidth: "1px",
-                borderRadius: "999px",
-                padding: "8px 20px",
-                color: "#cbff6a",
-                fontSize: "16px",
-              }}
-            >
-              {skill}
-            </div>
-          ))}
-        </div>
+        />
       </div>
     ),
     {
