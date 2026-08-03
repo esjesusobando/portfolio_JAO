@@ -151,6 +151,11 @@ export default function CreativePage() {
                     <div>
                       <h3 className="text-base font-semibold">{job.title}</h3>
                       <span className="text-sm text-primary">{job.company}</span>
+                      {job.country && (
+                        <span className="text-xs text-muted-foreground ml-2">
+                          {job.country}
+                        </span>
+                      )}
                     </div>
                     <span className="text-sm text-muted-foreground">{job.period}</span>
                   </div>
