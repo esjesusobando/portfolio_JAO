@@ -2,7 +2,7 @@
 
 ## 📊 Executive Summary
 
-Portfolio profesional dual para Jesús Obando - profesional con 11 años en Oil & Gas y 7 años en transformación digital.
+Portfolio profesional único para Jesús Obando — 11 años en Oil Portfolio profesional dual para Jesús Obando - profesional con 11 años en Oil & Gas y 7 años en transformación digital. Gas y 7 años en transformación digital, ahora en una sola vista.
 
 **URL:** https://portfolio-eta-sand-13.vercel.app
 

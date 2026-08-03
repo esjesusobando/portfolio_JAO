@@ -2,11 +2,7 @@
 
 import { motion } from "motion/react";
 import {
-  Sparkle,
-  FileText,
   ArrowRight,
-  Sun,
-  Moon,
 } from "@phosphor-icons/react";
 import Link from "next/link";
 import { ThemeProvider } from "@/components/ui/theme-provider";
@@ -52,9 +48,8 @@ function LandingContent() {
             </p>
           </motion.div>
 
-          {/* Two versions */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {/* Versión Creativa */}
+          {/* Single CTA */}
+          <div className="flex justify-center">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -62,49 +57,10 @@ function LandingContent() {
             >
               <Link
                 href="/creative"
-                className="block p-8 rounded-3xl bg-card border border-border 
-                  hover:border-primary hover:shadow-xl transition-all duration-300 group"
+                className="block px-10 py-5 rounded-3xl bg-primary text-primary-foreground font-semibold text-lg hover:shadow-xl transition-all duration-300 group"
               >
-                <div className="flex items-center gap-3">
-                  <div className="p-3 rounded-2xl bg-accent/10">
-                    <Sparkle weight="bold" size={24} className="text-primary" />
-                  </div>
-                  <div>
-                    <h2 className="text-xl font-semibold">Creativo</h2>
-                    <p className="text-xs text-muted-foreground">Portfolio Premium</p>
-                  </div>
-                </div>
-                <div className="flex items-center gap-2 text-primary text-sm font-medium mt-6">
-                  Ver Portfolio
-                  <ArrowRight weight="bold" size={14} className="group-hover:translate-x-1 transition-transform" />
-                </div>
-              </Link>
-            </motion.div>
-
-            {/* Versión Profesional */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
-            >
-              <Link
-                href="/professional"
-                className="block p-8 rounded-3xl bg-card border border-border 
-                  hover:border-primary hover:shadow-xl transition-all duration-300 group"
-              >
-                <div className="flex items-center gap-3">
-                  <div className="p-3 rounded-2xl bg-accent/10">
-                    <FileText weight="bold" size={24} className="text-primary" />
-                  </div>
-                  <div>
-                    <h2 className="text-xl font-semibold">Profesional</h2>
-                    <p className="text-xs text-muted-foreground">CV Optimizado ATS</p>
-                  </div>
-                </div>
-                <div className="flex items-center gap-2 text-primary text-sm font-medium mt-6">
-                  Ver Currículum
-                  <ArrowRight weight="bold" size={14} className="group-hover:translate-x-1 transition-transform" />
-                </div>
+                Ver Portfolio
+                <ArrowRight weight="bold" size={18} className="inline-block ml-2 group-hover:translate-x-1 transition-transform" />
               </Link>
             </motion.div>
           </div>

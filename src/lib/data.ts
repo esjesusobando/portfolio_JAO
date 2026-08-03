@@ -74,7 +74,7 @@ export const experience: Job[] = [
   },
   {
     title: "Well Planner / Ingeniero de Diseño Direccional",
-    company: "PDVSA (Lagunillas / San Tomé)",
+    company: "PDVSA (Lagunillas / Bachaquero)",
     period: "2016 – 2019",
     description: [
       "Planificación y diseño de trayectorias de pozos, análisis de pozos vecinos, diseño de sarta y creación de programas direccionales.",

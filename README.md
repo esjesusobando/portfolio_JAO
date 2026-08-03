@@ -1,13 +1,12 @@
 # Portfolio de Jesús Obando
 
-> Portfolio profesional dual: Creativo + Profesional. Proyecto Next.js 16 con React 19, Tailwind CSS v4 y Motion.
+> Portfolio profesional único con vista Creativa. Proyecto Next.js 16 con React 19, Tailwind CSS v4 y Motion.
 
 ## 📋 Descripción del Proyecto
 
 Portfolio personal de **Jesús Alfonso Obando Ramones**, Ingeniero de Petróleo con 11 años en Oil & Gas y 7 años en transformación digital. El proyecto presenta dos vistas diferenciadas:
 
 - **Portfolio Creativo** (`/creative`): Diseño visual premium con animaciones, componentes magnéticos y mayor densidad de contenido
-- **CV Profesional** (`/professional`): Diseño minimalista, orientado a ATS y lectura rápida
 
 ## 🛠️ Tecnologías
 
@@ -46,16 +45,16 @@ Sistema completo de tokens para modo oscuro con `--azul` como color de acento ne
 ## 📁 Estructura del Proyecto
 
 ```
-Focus_Now_Lab/portfolio/
+portfolio_jesus_obando/
 ├── src/
 │   ├── app/
 │   │   ├── layout.tsx              # Root layout + theme script (EC-013)
-│   │   ├── page.tsx               # Landing page con dos CTAs
+│   │   ├── page.tsx               # Landing page con CTA único
 │   │   ├── globals.css            # Tokens CSS + theme + edge cases
 │   │   ├── creative/
 │   │   │   ├── page.tsx           # Portfolio visual premium
 │   │   │   └── opengraph-image.tsx
-│   │   └── professional/
+│   │   └── professional/  # Redirects to /creative
 │   │       ├── page.tsx           # CV minimalista ATS-friendly
 │   │       └── opengraph-image.tsx
 │   ├── components/
@@ -90,7 +89,7 @@ Focus_Now_Lab/portfolio/
 
 ```bash
 # Navegar al directorio del proyecto
-cd Focus_Now_Lab/portfolio
+cd portfolio_jesus_obando
 
 # Instalar dependencias
 npm install
@@ -127,9 +126,8 @@ npx playwright test
 
 | Ruta | Descripción |
 |------|-------------|
-| `/` | Landing page con dos opciones: Creativo / Profesional |
+| `/` | Landing page con CTA único hacia Portfolio Creativo |
 | `/creative` | Portfolio visual premium con animaciones |
-| `/professional` | CV minimalista, orientado a reclutadores |
 
 ## 🔗 Deploy
 
@@ -145,7 +143,6 @@ El proyecto está configurado para deploy en Vercel:
 |------------|--------|
 | Landing page | ✅ Completo |
 | Portfolio Creativo | ✅ Completo |
-| CV Profesional | ✅ Completo |
 | Dark Mode | ✅ Completo |
 | Theme toggle | ✅ Completo |
 | FOUC prevention (EC-013) | ✅ Completo |

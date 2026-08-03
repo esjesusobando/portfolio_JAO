@@ -60,7 +60,7 @@
 
 - [x] README.md
 - [x] INSIGHTS.md
-- [x] RT.md
+- [x] RTM.md
 - [x] Resumen Day: Sesión
 - [x] Resumen Day: Super Report
 - [x] Resumen Day: Task List

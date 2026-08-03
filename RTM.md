@@ -214,7 +214,7 @@ export default function RootLayout({ children }) {
 ### Configuración
 
 ```bash
-cd Focus_Now_Lab/portfolio
+cd portfolio_jesus_obando
 npm install -D @playwright/test
 npx playwright install chromium
 npx playwright test
@@ -245,7 +245,7 @@ npx playwright test
 ## 📁 Archivos del Proyecto
 
 ```
-Focus_Now_Lab/portfolio/
+portfolio_jesus_obando/
 ├── src/
 │   ├── app/
 │   │   ├── layout.tsx           # + DT-003 (theme script)
