@@ -2,6 +2,7 @@ export interface Job {
   title: string;
   company: string;
   period: string;
+  country: string;
   description: string[];
 }
 
@@ -48,6 +49,7 @@ export const experience: Job[] = [
     title: "Project Manager AI",
     company: "AI Strong Consultorías",
     period: "2024 – Presente",
+    country: "México / Venezuela",
     description: [
       "Creo prototipos y MVPs usando integración de LLMs, Prompt Engineering y herramientas de IA para resolver problemas de negocio rápidamente.",
       "Entrenamiento de Equipos de Alto Rendimiento usando IA para resolver problemas de manera eficiente y escalable.",
@@ -59,6 +61,7 @@ export const experience: Job[] = [
     title: "Project Manager",
     company: "Empresa de Tecnología",
     period: "2022 – 2024",
+    country: "México",
     description: [
       "Gestión de proyectos tecnológicos aplicando metodologías ágiles.",
       "Coordinación de equipos multidisciplinarios para el cumplimiento de objetivos de negocio.",
@@ -68,6 +71,7 @@ export const experience: Job[] = [
     title: "Entrenamiento de Servicios Digitales",
     company: "Empresa de Tecnología",
     period: "2020 – 2022",
+    country: "México",
     description: [
       "Entrenamiento en servicios digitales y desarrollo de habilidades técnicas en entornos tecnológicos dinámicos.",
     ],
@@ -76,6 +80,7 @@ export const experience: Job[] = [
     title: "Well Planner / Ingeniero de Diseño Direccional",
     company: "PDVSA (Lagunillas / Bachaquero)",
     period: "2016 – 2019",
+    country: "Venezuela",
     description: [
       "Planificación y diseño de trayectorias de pozos, análisis de pozos vecinos, diseño de sarta y creación de programas direccionales.",
       "Seguimiento de trayectorias, análisis de torque y arrastre, hidráulica, punto neutro y demás parámetros críticos.",
@@ -85,6 +90,7 @@ export const experience: Job[] = [
     title: "Ingeniero de Operaciones (Perforación y Rehabilitación de Pozos)",
     company: "PDVSA - Costa Oriental del Lago",
     period: "2011 – 2016",
+    country: "Venezuela",
     description: [
       "Supervisión de operaciones de perforación y rehabilitación de pozos en la Costa Oriental del Lago.",
       "Gestión de la asignación de recursos para taladros de perforación.",
@@ -94,6 +100,7 @@ export const experience: Job[] = [
     title: "Ingeniero de Fluidos de Perforación / Analista de Laboratorio",
     company: "Saman - Tecnología Integral en Petróleo",
     period: "2008 – 2011",
+    country: "Venezuela",
     description: [
       "Supervisión de operaciones y seguimiento de propiedades del lodo con el objetivo de mantener la estabilidad del hoyo y reducir incidentes de torque y arrastre.",
       "Realización de pruebas de laboratorio de fluidos de perforación para asegurar el cumplimiento de las normas API y los requisitos operativos.",
