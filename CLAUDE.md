@@ -16,7 +16,7 @@
 - **Backup**: `C:\Users\sebas\Playground\00_Backup_Porfolio`
 
 ### Despliegue
-- **Vercel**: `https://portfoliojesusobando-main.vercel.app`
+- **Vercel**: `https://portfoliojesusobando-main.vercel.app (latest deploy)`
 - Auto-deploy en cada push a `master`
 
 ### Estructura
