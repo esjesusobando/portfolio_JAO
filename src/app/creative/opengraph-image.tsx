@@ -15,11 +15,12 @@ export default function OpenGraphImage() {
           flexDirection: "column",
           alignItems: "center",
           justifyContent: "center",
-          backgroundColor: "#0a0a0a",
+          background: "linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #0a0a0a 100%)",
           position: "relative",
+          overflow: "hidden",
         }}
       >
-        {/* Background gradient overlay */}
+        {/* Subtle grid pattern */}
         <div
           style={{
             position: "absolute",
@@ -27,29 +28,35 @@ export default function OpenGraphImage() {
             left: 0,
             right: 0,
             bottom: 0,
-            background: "linear-gradient(135deg, rgba(0,180,216,0.15) 0%, rgba(10,10,10,0.9) 100%)",
+            backgroundImage: "linear-gradient(rgba(0,180,216,0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(0,180,216,0.03) 1px, transparent 1px)",
+            backgroundSize: "40px 40px",
           }}
         />
 
-        {/* Accent line top */}
+        {/* Top accent bar */}
         <div
           style={{
             position: "absolute",
             top: 0,
             left: 0,
             right: 0,
-            height: "4px",
-            backgroundColor: "#00b4d8",
+            height: "3px",
+            background: "linear-gradient(90deg, transparent, #00b4d8, #cbff6a, #00b4d8, transparent)",
           }}
         />
 
-        {/* Main content */}
+        {/* Main content card */}
         <div
           style={{
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
-            gap: "16px",
+            gap: "12px",
+            padding: "40px 60px",
+            background: "rgba(10,10,10,0.7)",
+            borderRadius: "16px",
+            border: "1px solid rgba(0,180,216,0.2)",
+            backdropFilter: "blur(10px)",
             zIndex: 1,
           }}
         >
@@ -57,10 +64,11 @@ export default function OpenGraphImage() {
           <span
             style={{
               color: "#ffffff",
-              fontSize: "56px",
+              fontSize: "48px",
               fontWeight: "700",
               letterSpacing: "-0.02em",
               textAlign: "center",
+              textShadow: "0 0 30px rgba(0,180,216,0.3)",
             }}
           >
             {personalInfo.name}
@@ -70,9 +78,10 @@ export default function OpenGraphImage() {
           <span
             style={{
               color: "#00b4d8",
-              fontSize: "22px",
+              fontSize: "20px",
               textAlign: "center",
-              letterSpacing: "0.05em",
+              letterSpacing: "0.08em",
+              textTransform: "uppercase",
             }}
           >
             {personalInfo.title}
@@ -81,11 +90,11 @@ export default function OpenGraphImage() {
           {/* Divider */}
           <div
             style={{
-              width: "80px",
+              width: "60px",
               height: "2px",
-              backgroundColor: "#cbff6a",
-              marginTop: "8px",
-              marginBottom: "8px",
+              background: "linear-gradient(90deg, transparent, #cbff6a, transparent)",
+              marginTop: "4px",
+              marginBottom: "4px",
             }}
           />
 
@@ -93,7 +102,7 @@ export default function OpenGraphImage() {
           <span
             style={{
               color: "#64748b",
-              fontSize: "14px",
+              fontSize: "13px",
               textAlign: "center",
             }}
           >
@@ -101,15 +110,15 @@ export default function OpenGraphImage() {
           </span>
         </div>
 
-        {/* Bottom bar */}
+        {/* Bottom accent bar */}
         <div
           style={{
             position: "absolute",
             bottom: 0,
             left: 0,
             right: 0,
-            height: "4px",
-            backgroundColor: "#cbff6a",
+            height: "3px",
+            background: "linear-gradient(90deg, transparent, #cbff6a, #00b4d8, #cbff6a, transparent)",
           }}
         />
       </div>
