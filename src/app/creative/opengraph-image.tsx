@@ -2,6 +2,7 @@ import { ImageResponse } from "next/og";
 import { personalInfo } from "@/lib/data";
 
 export const size = { width: 1200, height: 630 };
+// Force cache invalidation - updated OG image design
 export const contentType = "image/png";
 
 export default function OpenGraphImage() {
