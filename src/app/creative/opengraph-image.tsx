@@ -4,6 +4,7 @@ import { personalInfo } from "@/lib/data";
 export const size = { width: 1200, height: 630 };
 // Force cache invalidation - updated OG image design
 export const contentType = "image/png";
+// Cache-bust v2 - force fresh OG image
 
 export default function OpenGraphImage() {
   return new ImageResponse(
